@@ -31,6 +31,11 @@ function App() {
       path: '/about', element: <div>This is all about</div>
     },
 
+
+    {
+      path: '*', element: <div>Route Not Found!</div>
+    }
+
    
    
   ])
