@@ -1,27 +1,38 @@
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Friends from './component/Friends/Friends';
+import Home from './component/Home/Home';
+import Main from './layout/Main/Main';
+
+
 
 function App() {
 
   const routeList = createBrowserRouter([
 
+
+
     {
-      path: '/', element: <div> hello</div> 
-    },
-    {
-      path: '/home', element: <div> Home</div> 
-    },
-    {
-      path: '/friends', element: <div> Friends</div> 
-    },
-    {
-      path: '/about', element: <div> About</div> 
-    },
-    {
-      path: '/contact', element: <div> Contact us</div> 
+      path: '/', element: <Main></Main>, children: [
+
+        {
+          path: '/home', element:<Home></Home>
+        },
+        {
+          path: '/friends', element: <Friends></Friends>
+        },
+
+      ] 
     },
 
+
+    {
+      path: '/about', element: <div>This is all about</div>
+    },
+
+   
+   
   ])
 
 
