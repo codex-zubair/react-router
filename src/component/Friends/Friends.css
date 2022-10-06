@@ -1,0 +1,8 @@
+.card-container
+{   
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: azure;
+}
