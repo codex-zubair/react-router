@@ -14,8 +14,10 @@ const Header = () => {
             <div>
                 <Link to='/home'>Home</Link>
                 <Link to='/friends'>Friends</Link>  
+                <Link to= '/posts'>Post</Link>
                 <Link to= '/about'>About</Link>
                 <Link to= '/contact'>Contact US</Link>
+                <h3>Common Header</h3>
             </div>
 
         </div>

@@ -6,6 +6,7 @@ import Contact from './component/Contact/Contact';
 import Details from './component/Details/Details';
 import Friends from './component/Friends/Friends';
 import Home from './component/Home/Home';
+import Post from './component/Post/Post';
 import Main from './layout/Main/Main';
 
 
@@ -51,6 +52,17 @@ function App() {
           },
           element: <Details></Details>
         },
+
+
+
+        {
+          path: '/posts', element: 
+          <Post></Post>,
+          loader: async ({params})=> {
+            return fetch("https://jsonplaceholder.typicode.com/posts");
+
+          },
+        }
 
 
 

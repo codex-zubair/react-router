@@ -7,12 +7,11 @@ import './Friends.css';
 const Friends = () => {
 
     const friends  = useLoaderData();
-    console.log(friends);
-   
+
 
     return (
         <div className='card-container'>
-            {friends.map(friend=> <Card friend = {friend}></Card>)}
+            {friends.map(friend=> <Card key={friend.id} friend = {friend}></Card>)}
         </div>
     );
 };
